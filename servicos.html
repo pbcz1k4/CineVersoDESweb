@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineVerso - Serviços</title>
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        .redirect-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 300px;
+            margin: 20px auto;
+            transition: transform 0.3s ease, background 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: white;
+
+        }
+
+        .redirect-card:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .service-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+
+        .service-item {
+            background-color: rgb(81, 78, 78);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 4px 5px 8px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-item a {
+            text-decoration: none;
+            display: block;
+        }
+
+        .service-item h3 {
+            color: black;
+        }
+
+        .service-item p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        section {
+            margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <h1>CineVerso</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./sobre.html">Sobre Nós</a></li>
+                <li><a href="./servicos.html">Serviços</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section>
+        <div class="service-list">
+            <div class="service-item">
+                <a href="analises.html">
+                    <h3>Análises de Filmes</h3>
+                    <p style="color: white;">Oferecemos análises detalhadas dos últimos lançamentos, com críticas
+                        especializadas e insights
+                        aprofundados para todos os cinéfilos.</p>
+                </a>
+            </div>
+
+            <div class="service-item">
+                <a href="recomendacoes.html ">
+                    <h3>Recomendações de Séries</h3>
+                    <p style="color: white;">Descubra novas séries para maratonar com nossas recomendações
+                        personalizadas, baseadas em suas
+                        preferências e tendências atuais.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="redirect-card">
+            <h3>Filmes em Cartaz</h3>
+            <p>Descubra mais sobre os últimos lançamentos do cinema em 2024</p>
+            <a href="https://www.cinemark.com.br/?utm_source=google&utm_medium=cpc&utm_campaign=[MM][CD]s_institucional&utm_adgroup=Geral&utm_content=ad02&gad_source=1&gclid=Cj0KCQjwxsm3BhDrARIsAMtVz6NjAQWqkefkEUx83OHIufW-lVPdR5tfxirwu2mN6SIA9OVo8hoyjncaAiDfEALw_wcB"
+                target="_blank">
+                Acesse agora
+            </a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 CineVerso. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

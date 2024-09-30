@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineVerso - Galeria</title>
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+
+    <style>
+        .gallery {
+            margin: 100px auto 0;
+            width: 70%;
+            display: flex;
+            height: 450px;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 10%;
+            height: 100%;
+            object-fit: cover;
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            transition: all ease-in-out 0.4s;
+            border-radius: 10px;
+        }
+
+        .gallery img:hover {
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <h1>CineVerso</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./sobre.html">Sobre Nós</a></li>
+                <li><a href="./servicos.html">Serviços</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <div class="gallery">
+        <img src="imagens/Game_of_Thrones_capa.webp" alt="Game of Thrones">
+        <img src="imagens/deadpol.webp" alt="Deadpool">
+        <img src="imagens/loki.jpg" alt="Loki">
+        <img src="imagens/Vingadores.jpg" alt="Vingadores">
+        <img src="imagens/Star_Wars.jpg" alt="Star Wars">
+        <img src="imagens/BreakingBad.webp" alt="Breaking Bad">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CineVerso. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

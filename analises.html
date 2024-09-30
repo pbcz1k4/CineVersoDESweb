@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análises de Filmes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        .filmes-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .filme-item {
+            background-color: rgb(81, 78, 78);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            width: 28%;
+            max-width: 300px;
+            box-shadow: 4px 5px 8px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s;
+            margin-bottom: 100px;
+        }
+
+        .filme-item:hover {
+            transform: scale(1.05);
+        }
+
+        .filme-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+
+        .filme-item p {
+            color: #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Análises de Filmes</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./servicos.html">Serviços</a></li>
+                <li><a href="./recomendacoes.html">Recomendações de Séries</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="filmes-list">
+            <div class="filme-item">
+                <img src="imagens/AOrigemPoster.jpg" alt="A Origem">
+                <h3 style="color: white;">A Origem</h3>
+                <p>O filme é uma obra-prima de Christopher Nolan que questiona os limites da mente humana e a
+                    maleabilidade da realidade. O
+                    roteiro intricado mistura conceitos de física, filosofia e psicologia, criando uma narrativa que
+                    exige atenção aos
+                    detalhes. A estética visual de A Origem é marcante, com efeitos especiais que desafiam a gravidade e
+                    paisagens que se
+                    dobram sobre si mesmas. Além disso, o filme explora temas como culpa, perda e redenção, enquanto
+                    aprofunda as
+                    complexidades das relações humanas. Sua trilha sonora, composta por Hans Zimmer, amplifica o clima
+                    de tensão e
+                    surrealismo. A Origem é um filme que continua sendo discutido e analisado pelos fãs e críticos
+                    devido ao seu final
+                    ambíguo e o conceito de múltiplas realidades.</p>
+                <p><strong>Gênero:</strong> Ficção Científica, Ação</p>
+                <p><strong>Ano:</strong> 2010</p>
+            </div>
+
+            <div class="filme-item">
+                <img src="imagens/poster-filme-parasite.webp" alt="Parasita">
+                <h3 style="color: white;">Parasita</h3>
+                <p>Parasita é uma crítica social ácida e engenhosa sobre as desigualdades econômicas e a luta de
+                    classes. Bong Joon-ho
+                    mistura elementos de comédia, suspense e tragédia, mantendo o espectador em um estado constante de
+                    tensão. O filme
+                    utiliza simbolismos poderosos, como a casa dos Park, que representa o topo da pirâmide social,
+                    enquanto a casa dos Kim,
+                    subterrânea e claustrofóbica, simboliza a realidade sufocante dos mais pobres. A direção de arte e o
+                    design de produção
+                    foram cuidadosamente elaborados para enfatizar essas distinções. Além disso, a habilidade de Bong
+                    Joon-ho em navegar por
+                    diferentes gêneros dentro de um único filme é notável. Parasita foi o primeiro filme em língua
+                    não-inglesa a ganhar o
+                    Oscar de Melhor Filme, e sua mensagem sobre as consequências do capitalismo desenfreado ressoa
+                    globalmente.</p>
+                <p><strong>Gênero:</strong> Drama, Thriller</p>
+                <p><strong>Ano:</strong> 2019</p>
+            </div>
+
+            <div class="filme-item">
+                <img src="imagens/god.webp" alt="O Poderoso Chefão">
+                <h3 style="color: white;">O Poderoso Chefão</h3>
+                <p>O Poderoso Chefão é considerado uma das maiores obras-primas da história do cinema. A narrativa épica
+                    de Coppola combina
+                    uma exploração íntima da família e dos laços de lealdade com uma crítica sutil às instituições do
+                    poder e do
+                    capitalismo. A transformação de Michael Corleone, de um jovem inocente para um frio líder mafioso, é
+                    uma das mais
+                    marcantes trajetórias de personagem já vistas no cinema. O filme também lida com questões de honra,
+                    traição e a natureza
+                    do poder, sendo frequentemente interpretado como uma metáfora para o próprio funcionamento da
+                    sociedade americana. As
+                    atuações de Marlon Brando e Al Pacino são icônicas, e a direção de Coppola equilibra violência
+                    brutal com momentos de
+                    profunda introspecção. A cinematografia sombria e o uso de luz e sombra criam um tom clássico e
+                    atemporal, enquanto a
+                    trilha sonora de Nino Rota ajuda a definir o sentimento de tragédia que permeia toda a saga.</p>
+                <p><strong>Gênero:</strong> Crime, Drama</p>
+                <p><strong>Ano:</strong> 1972</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CineVerso. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

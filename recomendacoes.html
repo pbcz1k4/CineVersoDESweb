@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendações de Séries</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        .series-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .series-item {
+            background-color: rgb(81, 78, 78);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            width: 28%;
+            margin-bottom: 100px;
+            max-width: 300px;
+            box-shadow: 4px 5px 8px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .series-item:hover {
+            transform: scale(1.05);
+        }
+
+        .series-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+
+        .series-item p {
+            color: #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Recomendações de Séries</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./servicos.html">Serviços</a></li>
+                <li><a href="./analises.html">Análise de Filmes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="series-list">
+            <div class="series-item">
+                <img src="imagens/BreakingBad.webp" alt="Breaking Bad">
+                <h3 style="color: white;">Breaking Bad</h3>
+                <p>Um professor de química se transforma em um poderoso traficante de metanfetamina. Drama intenso e
+                    atuações incríveis.</p>
+                <p><strong>Gênero:</strong> Drama, Crime</p>
+                <p><strong>Ano:</strong> 2008-2013</p>
+            </div>
+
+            <div class="series-item">
+                <img src="imagens/stranegr.webp" alt="Stranger Things">
+                <h3 style="color: white;">Stranger Things</h3>
+                <p>Uma série de ficção científica e horror que traz nostalgia dos anos 80 e personagens cativantes.</p>
+                <p><strong>Gênero:</strong> Ficção Científica, Terror</p>
+                <p><strong>Ano:</strong> 2016-presente</p>
+            </div>
+
+            <div class="series-item">
+                <img src="imagens/theoffice.jpg" alt="The Office">
+                <h3 style="color: white;">The Office</h3>
+                <p>Uma comédia de situação que retrata o dia a dia dos funcionários de uma empresa de papel.</p>
+                <p><strong>Gênero:</strong> Comédia</p>
+                <p><strong>Ano:</strong> 2005-2013</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CineVerso. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

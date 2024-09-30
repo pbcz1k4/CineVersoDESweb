@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineVerso - Contato</title>
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+
+    <style>
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: calc(100vh - 100px);
+            padding-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        .contact-form {
+            background-color: rgb(81, 78, 78);
+            padding: 40px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .contact-form input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .contact-form .radio-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        /* Container para os botões */
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button-group button {
+            width: 48%;
+            padding: 10px;
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .button-group button:hover {
+            background-color: #938b8b;
+        }
+
+        @media (max-width: 500px) {
+            .button-group {
+                flex-direction: column;
+            }
+
+            .button-group button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .button-group button:last-child {
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CineVerso</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./sobre.html">Sobre Nós</a></li>
+                <li><a href="./servicos.html">Serviços</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-container">
+        <form class="contact-form" action="submit_form.html" method="POST">
+            <h2>Contato</h2>
+
+            <label for="name" style="color: #000000;">Nome Completo</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required minlength="3">
+
+            <label for="email" style="color: #000000;">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+            <label for="phone" style="color: #000000;">Telefone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Seu telefone (ex: 11987654321)" pattern="[0-9]{11}"
+                required>
+
+            <label for="contact-method" style="color: #000000;">Como prefere ser contactado?</label>
+            <select id="contact-method" name="contact-method" required>
+                <option value="">Selecione uma opção</option>
+                <option value="email">E-mail</option>
+                <option value="telefone">Telefone</option>
+            </select>
+
+            <label style="color: #000000;">Deseja receber novidades?</label>
+            <div class="radio-group">
+                <input type="radio" id="sim" name="novidades" value="sim" required>
+                <label for="sim" style="color: #000000;">Sim</label>
+                <input type="radio" id="nao" name="novidades" value="nao" required>
+                <label for="nao" style="color: #000000;">Não</label>
+            </div>
+
+            <label for="message" style="color: #000000;">Mensagem</label>
+            <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui..." rows="5"
+                required></textarea>
+
+            <div class="button-group">
+                <button style="color: white;" type="submit">Enviar</button>
+                <button style="color: white;" type="reset">Limpar</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CineVerso. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
